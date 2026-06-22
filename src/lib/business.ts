@@ -1,8 +1,9 @@
 export const business = {
   name: "Francy",
-  tagline: "Lashes, nails & brows in Gottsunda",
-  description: "Full-service beauty salon owned by Ewelina offering lashes, nails, and brow services since 2019.",
-  category: "Beauty",
+  tagline: "Skönhetssalong med fransar, naglar & brows i Gottsunda",
+  description:
+    "Francy på Murargatan 31 — fransar, gelénaglar, lashlift, browlift och trådning under samma tak. Ewelina har drivit salongen sedan 2019.",
+  category: "Skönhetssalong",
   address: {
     street: "Murargatan 31",
     postalCode: "754 37",
@@ -11,17 +12,20 @@ export const business = {
   },
   phone: "070-924 45 20",
   phoneLink: "tel:+46709244520",
-  email: null as string | null,
-  emailLink: null as string | null,
+  email: "ewelina.andersson@live.se" as string | null,
+  emailLink: "mailto:ewelina.andersson@live.se" as string | null,
   bookingUrl: "https://www.bokadirekt.se/places/francy-28757",
   bookingLabel: "Boka på Bokadirekt",
-  facebookUrl: null as string | null,
-  instagramUrl: null as string | null,
+  websiteUrl: "https://www.francy.se/" as string | null,
+  heroImage: "/images/hero.jpg",
+  aboutImage: "/images/gallery-2.jpg",
+  facebookUrl: "https://www.facebook.com/francy.uppsala" as string | null,
+  instagramUrl: "https://www.instagram.com/francyuppsala/" as string | null,
   owner: "Ewelina",
   rating: 4.9,
   reviewCount: 575,
-  foundedYear: null as number | null,
-  coordinates: { lat: 59.845, lng: 17.66 },
+  foundedYear: 2019,
+  coordinates: { lat: 59.8638, lng: 17.6776 },
   hours: {
     note: "Ring gärna innan besök.",
     regular: [
@@ -34,29 +38,36 @@ export const business = {
       { day: "Söndag", hours: "Stängt" },
     ],
   },
+  trustBadges: [
+    { label: "4,9 på Bokadirekt", icon: "star" },
+    { label: "575+ verifierade omdömen", icon: "reviews" },
+    { label: "Fransar, naglar & brows", icon: "location" },
+    { label: "I Gottsunda sedan 2019", icon: "student" },
+  ],
   usps: [
     {
-      title: "Certifierad behandling",
-      description: "Skönhetsbehandlingar med omsorg hos Francy.",
+      title: "Allt under ett tak",
+      description: "Fransar, gelénaglar, lashlift, browlift och trådning — boka flera behandlingar samma dag.",
     },
     {
-      title: "Personlig service",
-      description: "Varje besök anpassas efter dina önskemål.",
+      title: "Ewelinas erfarenhet",
+      description: "Salongen grundades 2019 — nagelterapeut sedan 2010, fransstylist sedan 2012.",
     },
     {
-      title: "Populärt val",
-      description: "Starkt betyg med 575 recensioner.",
+      title: "Hundratals femstjärniga omdömen",
+      description: "575+ recensioner med 4,9 i snitt på Bokadirekt.",
     },
     {
-      title: "Bekvämt läge",
-      description: "Finns på Murargatan 31 i Uppsala.",
+      title: "Bekvämt i Gottsunda",
+      description: "Murargatan 31 — enkelt att nå från hela Uppsala.",
     },
   ],
   services: [
     {
       id: "volymfransar",
       name: "Volymfransar",
-      description: "Professionell volymfransar med fokus på kvalitet och kundnöjdhet.",
+      icon: "✨",
+      description: "Vi mixar efter design, volym och singelfransar — skräddarsytt resultat.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -64,7 +75,8 @@ export const business = {
     {
       id: "gel-naglar",
       name: "Gelénaglar",
-      description: "Professionell gelénaglar med fokus på kvalitet och kundnöjdhet.",
+      icon: "💅",
+      description: "Gellack, förlängning och design — valfri färg och glitter.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -72,7 +84,8 @@ export const business = {
     {
       id: "lashlift",
       name: "Lashlift",
-      description: "Professionell lashlift med fokus på kvalitet och kundnöjdhet.",
+      icon: "💫",
+      description: "Permanent lyft av fransarna för ett naturligt, fräscht resultat.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
@@ -80,32 +93,97 @@ export const business = {
     {
       id: "browlift",
       name: "Browlift",
-      description: "Professionell browlift med fokus på kvalitet och kundnöjdhet.",
+      icon: "🌸",
+      description: "Plock och design av bryn — formar ögonbrynen efter dina önskemål.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
     },
     {
-      id: "tr-dning",
+      id: "tradning",
       name: "Trådning",
-      description: "Professionell trådning med fokus på kvalitet och kundnöjdhet.",
+      icon: "🧵",
+      description: "Trådning av valfritt område — boka 15 minuter per zon.",
       duration: "30–90 min",
       priceFrom: null,
       note: "Kontakta oss för aktuella priser.",
     },
   ],
+  gallery: [
+    { id: 1, label: "Salongen", image: "/images/hero.jpg" },
+    { id: 2, label: "Behandling", image: "/images/gallery-1.jpg" },
+    { id: 3, label: "Gelénaglar", image: "/images/gallery-2.jpg" },
+  ],
   testimonials: [
     {
-      text: "Fantastisk upplevelse hos Francy. Personalen var professionell och resultatet överträffade förväntningarna.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Så otroligt trevlig tjej som gjorde ett fantastiskt jobb. Jag kan verkligen rekommendera henne.⭐️⭐️⭐️⭐️⭐️",
+      author: "Sophie T.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/francy-28757",
       rating: 5,
+      date: "2026-06-22",
     },
     {
-      text: "Rekommenderar Francy varmt. Snabb service, trevligt bemötande och bra kvalitet till rimligt pris.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Toppen som vanligt😊",
+      author: "AnneCharlotte P.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/francy-28757",
       rating: 5,
+      date: "2026-06-14",
+    },
+    {
+      text: "Bästa :-)",
+      author: "Anette W.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/francy-28757",
+      rating: 5,
+      date: "2026-05-25",
+    },
+    {
+      text: "Alltid bäst!",
+      author: "Madeleine L.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/francy-28757",
+      rating: 5,
+      date: "2026-05-08",
+    },
+  ],
+  about: {
+    headline: "Din skönhetssalong i Gottsunda sedan 2019",
+    paragraphs: [
+      "Välkomna till mig, Ewelina på Francy. Jag har ägt och drivit salongen sedan 2019. Jag började min resa 2010 när jag utbildade mig till nagelterapeut. 2012 utbildade jag mig till fransstylist och har även lash och browlist på meritlistan.",
+      "På Murargatan 31 erbjuder Francy volymfransar, gelénaglar, lashlift, browlift och trådning i en välkomnande miljö — med 575+ recensioner och 4,9 i snittbetyg på Bokadirekt.",
+      "Har ni frågor eller funderingar så kan ni nå mig på 0709244520.",
+    ],
+  },
+  faq: [
+    {
+      question: "Var ligger Francy?",
+      answer: "Vi finns på Murargatan 31, 754 37 Uppsala.",
+    },
+    {
+      question: "Hur bokar jag tid hos Francy?",
+      answer: "Boka via Bokadirekt eller ring 070-924 45 20.",
+    },
+    {
+      question: "Vad säger andra kunder om Francy?",
+      answer: "Vi har 4,9 i snittbetyg baserat på 575+ recensioner på Bokadirekt.",
+    },
+    {
+      question: "Vilka öppettider har ni?",
+      answer: "Se aktuella öppettider på Bokadirekt. Vi rekommenderar att boka tid i förväg.",
+    },
+    {
+      question: "Kan jag avboka eller omboka min tid?",
+      answer: "Avbokning sker 24 timmar innan bokad behandling via Bokadirekt, mail eller direktkontakt med behandlare — annars debiteras 100% av behandlingspriset.",
+    },
+    {
+      question: "Vilka behandlingar erbjuder ni?",
+      answer: "Volymfransar, gelénaglar, lashlift, browlift och trådning. Se hela utbudet på Bokadirekt.",
+    },
+    {
+      question: "Kan jag boka flera behandlingar samma dag?",
+      answer: "Ja, boka via Bokadirekt så hjälper vi dig kombinera behandlingar.",
     },
   ],
   seoKeywords: [
@@ -113,12 +191,14 @@ export const business = {
     "naglar Uppsala",
     "lashlift Murargatan",
     "skönhetssalong Uppsala",
+    "Francy Uppsala",
+    "fransar och naglar Uppsala",
   ],
   brandColors: {
-    primary: "#8b4a6b",
-    secondary: "#e8b4bc",
-    accent: "#fdf6f8",
-    dark: "#5c2d42",
+    primary: "#7B4B6F",
+    secondary: "#F4C2C2",
+    accent: "#FFF8FA",
+    dark: "#4A2D42",
   },
 } as const;
 
@@ -135,4 +215,9 @@ export function getMapsEmbedUrl() {
 export function getMapsLink() {
   const query = encodeURIComponent(getFullAddress());
   return `https://www.google.com/maps/search/?api=1&query=${query}`;
+}
+
+export function formatPrice(amount: number | null) {
+  if (amount === null) return "Pris på förfrågan";
+  return `från ${amount} kr`;
 }

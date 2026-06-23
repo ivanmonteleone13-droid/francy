@@ -48,6 +48,13 @@ export default function Footer() {
                 {business.phone}
               </a>
             </p>
+            {business.emailLink && business.email ? (
+              <p>
+                <a href={business.emailLink} className="hover:text-white">
+                  {business.email}
+                </a>
+              </p>
+            ) : null}
           </address>
         </div>
       </div>

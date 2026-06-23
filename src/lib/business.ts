@@ -17,6 +17,7 @@ export const business = {
   bookingUrl: "https://www.bokadirekt.se/places/francy-28757",
   bookingLabel: "Boka på Bokadirekt",
   websiteUrl: "https://www.francy.se/" as string | null,
+  logoImage: "/images/logo.jpg" as string | null,
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/gallery-2.jpg",
   facebookUrl: "https://www.facebook.com/francy.uppsala" as string | null,
@@ -69,7 +70,7 @@ export const business = {
       icon: "✨",
       description: "Vi mixar efter design, volym och singelfransar — skräddarsytt resultat.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 1600,
       note: "Kontakta oss för aktuella priser.",
     },
     {
@@ -87,7 +88,7 @@ export const business = {
       icon: "💫",
       description: "Permanent lyft av fransarna för ett naturligt, fräscht resultat.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 1385,
       note: "Kontakta oss för aktuella priser.",
     },
     {
@@ -96,7 +97,7 @@ export const business = {
       icon: "🌸",
       description: "Plock och design av bryn — formar ögonbrynen efter dina önskemål.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 1385,
       note: "Kontakta oss för aktuella priser.",
     },
     {
@@ -105,7 +106,7 @@ export const business = {
       icon: "🧵",
       description: "Trådning av valfritt område — boka 15 minuter per zon.",
       duration: "30–90 min",
-      priceFrom: null,
+      priceFrom: 250,
       note: "Kontakta oss för aktuella priser.",
     },
   ],
@@ -113,6 +114,10 @@ export const business = {
     { id: 1, label: "Salongen", image: "/images/hero.jpg" },
     { id: 2, label: "Behandling", image: "/images/gallery-1.jpg" },
     { id: 3, label: "Gelénaglar", image: "/images/gallery-2.jpg" },
+    { id: 4, label: "Presentkort", image: "/images/gallery-3.jpg" },
+    { id: 5, label: "Fransar", image: "/images/gallery-4.jpg" },
+    { id: 6, label: "Naglar & brows", image: "/images/gallery-5.jpg" },
+    { id: 7, label: "Ewelina", image: "/images/gallery-6.jpg" },
   ],
   testimonials: [
     {

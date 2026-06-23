@@ -36,6 +36,15 @@ export default function ContactSection() {
                     {business.phone}
                   </a>
                 </p>
+                {business.emailLink && business.email ? (
+                  <p>
+                    <strong className="text-[#7B4B6F]">E-post:</strong>
+                    <br />
+                    <a href={business.emailLink} className="font-semibold text-[#7B4B6F] hover:underline">
+                      {business.email}
+                    </a>
+                  </p>
+                ) : null}
                 <p>
                   <strong className="text-[#7B4B6F]">Bokning:</strong>
                   <br />

@@ -8,6 +8,15 @@ export default function ContactForm() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const subject = encodeURIComponent(`Meddelande till ${business.name}`);
+    const body = encodeURIComponent(
+      `Namn: ${data.get("name")}\nE-post: ${data.get("email")}\nTelefon: ${data.get("phone") || "-"}\n\n${data.get("message")}`,
+    );
+    if (business.emailLink) {
+      window.location.href = `${business.emailLink}?subject=${subject}&body=${body}`;
+    }
     setSubmitted(true);
   }
 
@@ -19,7 +28,8 @@ export default function ContactForm() {
       >
         <p className="text-lg font-semibold text-[#3D2914]">Tack för ditt meddelande!</p>
         <p className="mt-2 text-sm text-[#5C4033]/70">
-          Detta är en demo-webbplats. Ring {business.phone} för att nå oss direkt.
+          Detta är en demo-webbplats. Ring {business.phone}
+          {business.email ? ` eller maila ${business.email}` : ""} för att nå oss direkt.
         </p>
       </div>
     );
